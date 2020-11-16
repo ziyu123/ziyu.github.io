@@ -1,16 +1,17 @@
 ---
 layout: page
 title: Links
-description: 没有链接的博客是孤独的
+description: 链接通往更多的世界之门
 keywords: 友情链接
 comments: true
-menu: Links
+menu: 链接
 permalink: /links/
 ---
 
-## My personal pages
-- [Google Research](https://scholar.google.com.hk/citations?hl=zh-CN&user=etqLTR8AAAAJ)
-- [Research Gate](https://www.researchgate.net/)
-- [UESTC](http://www.uestc.edu.cn)
 
-## Public pages
+> 友情链接
+
+- 本博客模版
+<ul>
+  <li><a href="http://mazhuang.org" target="_blank">码志</a></li>
+</ul>
