@@ -1,26 +1,49 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:
-url: https://chauby.github.io
+baseurl: 
+url: https://ziyu123.github.io
 date_format: "ordinal"
-title: 沙漏
-subtitle: "沙漏没有水，但依旧流逝时间"
-description: "The sandglass remembers the time we mislay"
-keywords: 沙漏, 博士的沙漏, Chauby Zou, Chauby, Chaobin Zou 
-# timezone: Asia/Chengdu
+title: 小糖豆
+subtitle: "美丽新视界"
+description: "个人博客"
+keywords: blog ziyu github
+timezone: Asia/Beijing
 encoding: "utf-8"
-side_bar_repo_limit: 5
+side_bar_repo_limit: 2
+repository: ziyu123/ziyu123.github.io
+# 对 css 和 js 资源的 cdn 加速配置
+#cdn:
+#    jsdelivr:
+#        enabled: true
+# 组件配置
+components:
+    # 分享
+    share:
+        enabled: false
+    # 不蒜子访问统计
+    busuanzi:
+        enabled: true
+        start_date: 2020-11-09
+# 压缩页面内容
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+# 文章字数统计
+word_count:
+    enabled: true
+# 代码高亮风格，支持的 theme 列表见 https://github.com/mzlogin/rouge-themes
+highlight_theme: github
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Chauby
-organization: UESTC
-organization_url: http://www.uestc.edu.cn
-github_username: Chauby
-location: Chengdu, China
-email: chaubyZou@163.com
+author: ziyu
+organization: 
+organization_url: 
+github_username: ziyu123
+location: Beijing, China
+email: 1023947217@qq.com
 
 # ---------------- #
 #    Navigation    #
@@ -28,27 +51,31 @@ email: chaubyZou@163.com
 navs:
   -
     href: /
-    label: Homepage
+    label: 首页
 
   -
-    href: /cv/
-    label: CV
-
-  -
-    href: /publications/
-    label: Publications
+    href: /blog/
+    label: 博客
 
   -
     href: /categories/
-    label: Blog
+    label: 分类
+
+#   -
+#     href: /open-source/
+#     label: 开源
 
   -
     href: /wiki/
-    label: Wiki
+    label: 维基
 
   -
     href: /links/
-    label: Links
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
 
 # ---------------- #
 #       RSS        #
@@ -62,7 +89,7 @@ markdown: kramdown
 kramdown:
     input: GFM
 highlighter: rouge
-paginate: 8
+paginate: 10
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
@@ -70,7 +97,7 @@ permalink: /:year/:month/:day/:title/
 plugins:
     - jekyll-github-metadata
     - rouge
-#     - jekyll-html-pipeline
+    - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
@@ -81,8 +108,6 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: chauby/chauby.github.io
-
 # ---------------- #
 #      Comments    #
 # ---------------- #
@@ -91,23 +116,23 @@ repository: chauby/chauby.github.io
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
-# disqus:
-#     username: 
+#disqus:
+#    username: 
 # https://imsun.net/posts/gitment-introduction/
-# gitment:
-#     owner: chauby
-#     repo: blog-comments
-#     oauth:
-#         client_id: d2e1cbbd298958076462
-#         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+#gitment:
+#    owner: mzlogin
+#    repo: blog-comments
+#    oauth:
+#        client_id: d2e1cbbd298958076462
+#        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # https://github.com/gitalk/gitalk#install
-# gitalk:
-#     owner: chauby
-#     repo: blog-comments
-#     clientID: d2e1cbbd298958076462
-#     clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+#gitalk:
+#    owner: mzlogin
+#    repo: blog-comments
+#    clientID: d2e1cbbd298958076462
+#    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # 在使用其它评论组件时可点击显示 Disqus
-# lazy_load_disqus : false
+lazy_load_disqus : false
 
 # ---------------- #
 #      Search      #
@@ -119,8 +144,12 @@ simple_jekyll_search:
     limit: 10
 
 # ---------------- #
-#    Analytics     #
+#      Google      #
 # ---------------- #
-google:
-    analytics_id: UA-80669434-1
-github: [metadata]
+#google:
+#    analytics_id: UA-80669434-1
+#    adsense:
+#        footer: true
+#        sidebar: true 
+#        content_header: true
+#        content_footer: false
